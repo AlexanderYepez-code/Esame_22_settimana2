@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Adopt<span>Doggy</span> 🐾</div>
+        <nav>
+            <a href="./index.html" class="active">Homepage</a>
+            <a href="./index2.html">Bestioline</a>
+            <a href="./index3.html">Contatti</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contatti-section">
+
+            <!-- COLONNA SINISTRA: info -->
+            <div class="contatti-info">
+                <div class="label-tag">Scrivici</div>
+                <h1 class="section-title">Siamo qui<br>per te </h1>
+                <p class="contatti-intro">Hai domande su un cane specifico o vuoi sapere come funziona il processo di
+                    adozione? Contattaci, ti risponderemo entro 24 ore.</p>
+
+                <div class="info-list">
+                    <div class="info-item">
+
+                        <div>
+                            <div class="info-label">Indirizzo</div>
+                            <div class="info-value">Via dei Cagnolini 12, Milano</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+
+                        <div>
+                            <div class="info-label">Telefono</div>
+                            <div class="info-value">+39 02 1234 5678</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+
+                        <div>
+                            <div class="info-label">Email</div>
+                            <div class="info-value">ciao@adoptdoggy.it</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+
+                        <div>
+                            <div class="info-label">Orari</div>
+                            <div class="info-value">Lun–Ven: 9:00–18:00<br>Sab: 10:00–14:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLONNA DESTRA: form -->
+            <div class="contatti-form-wrap">
+                <div class="form-card" id="form-card">
+
+                    <!-- FORM -->
+                    <div id="form-view">
+                        <h2 class="form-title">Mandaci un messaggio</h2>
+                        <p class="form-sub">Compila il modulo e ti risponderemo al più presto.</p>
+
+                        <div class="form-group">
+                            <label for="nome">Nome e cognome</label>
+                            <input type="text" id="nome" placeholder="Es. Mario Rossi">
+                            <span class="field-error" id="error-nome"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Es. mario@email.it">
+                            <span class="field-error" id="error-email"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="oggetto">Argomento</label>
+                            <select id="oggetto">
+                                <option value="">Seleziona un argomento</option>
+                                <option value="adozione">Informazioni adozione</option>
+                                <option value="cane">Domanda su un cane specifico</option>
+                                <option value="volontario">Diventare volontario</option>
+                                <option value="donazione">Donazione</option>
+                                <option value="altro">Altro</option>
+                            </select>
+                            <span class="field-error" id="error-oggetto"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messaggio">Messaggio</label>
+                            <textarea id="messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+                            <span class="field-error" id="error-messaggio"></span>
+                        </div>
+
+                        <div class="form-group privacy-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy">
+                                <span>Ho letto e accetto la <a href="#">privacy policy</a></span>
+                            </label>
+                            <span class="field-error" id="error-privacy"></span>
+                        </div>
+
+
+                        <button class="btn-primary btn-full" id="btn-invia">
+                            Invia messaggio
+                        </button>
+                    </div>
+
+                    <!-- SUCCESSO (nascosto di default) -->
+                    <div id="success-view" class="success-view" style="display:none;">
+                        <div class="success-icon">🐾</div>
+                        <h2 class="form-title">Messaggio inviato!</h2>
+                        <p class="form-sub">Grazie per averci scritto. Ti risponderemo entro 24 ore all'indirizzo email
+                            indicato.</p>
+
+                        <button class="btn-outline" id="btn-reset" style="margin-top:1.5rem;">
+                            Invia un altro messaggio
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">AdoptDoggy 🐾</div>
+        <div class="footer-links">
+            <a href="./index.html">Homepage</a>
+            <a href="./index2.html">Bestioline</a>
+            <a href="./index3.html">Contatti</a>
+        </div>
+        <div class="footer-copy">© 2025 AdoptDoggy — con ❤️ per i cani</div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
